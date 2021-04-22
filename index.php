@@ -15,45 +15,59 @@ require_once ROOT_PATH.'/lib/mysqlDao.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Bawaslu Kabupaten Sleman</title>
     <meta name="description" content="The official website of the Elections Department Singapore.">
     <meta name="author" content="ELD">
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.eld.gov.sg">
-    <meta property="og:title" content="Elections Department Singapore">
-    <meta property="og:description" content="The official website of the Elections Department Singapore.">
-    <meta property="og:image" content="https://www.eld.gov.sg/images/bg/hero-bg-preview.jpg">
-    <script type="text/javascript" src="<?php echo ROOT_URL?>/assets/js/eldWogaa.js">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <script type="text/javascript" src="">
     </script>
-
-    <link rel="apple-touch-icon" href="images/icons/touch-icon-iphone.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/icons/touch-icon-ipad.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/icons/touch-icon-iphone-retina.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/icons/touch-icon-ipad-retina.png">
-
-    <title>Elections Department Singapore (ELD)</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="<?php echo ROOT_URL?>/assets/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="<?php echo ROOT_URL?>/assets/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="<?php echo ROOT_URL?>/assets/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="<?php echo ROOT_URL?>/assets/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114"
+        href="<?php echo ROOT_URL?>/assets/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120"
+        href="<?php echo ROOT_URL?>/assets/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144"
+        href="<?php echo ROOT_URL?>/assets/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152"
+        href="<?php echo ROOT_URL?>/assets/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="<?php echo ROOT_URL?>/assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"
+        href="<?php echo ROOT_URL?>/assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="<?php echo ROOT_URL?>/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96"
+        href="<?php echo ROOT_URL?>/assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="<?php echo ROOT_URL?>/assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="<?php echo ROOT_URL?>/assets/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Bootstrap core CSS -->
     <link type="text/css" href="<?php echo ROOT_URL?>/assets/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-
     <script type="text/javascript" src="<?php echo ROOT_URL?>/assets/js/ie-emulation-modes-warning.min.js"></script>
-
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script type="text/javascript" src="<?php echo ROOT_URL?>/assets/js/ie10-viewport-bug-workaround.min.js"></script>
-
     <!-- Custom styles for this template -->
     <link type="text/css" rel="stylesheet" href="<?php echo ROOT_URL?>/assets/css/mmenu.css" />
-
     <link type="text/css" rel="stylesheet" href="<?php echo ROOT_URL?>/assets/css/style.css?<?php echo rand()?>" />
     <!-- <link type="text/css" rel="stylesheet" href="css/w3.css" /> -->
     <link type="text/css" rel="stylesheet" href="<?php echo ROOT_URL?>/assets/css/flexslider.min.css" />
     <script type="text/javascript" src="<?php echo ROOT_URL?>/assets/js/jquery.min.js"></script>
-
-
     <!-- ELD Coding -->
-    <script type="text/javascript" src="<?php echo ROOT_URL?>/assets/js/eldFrame.js">
+    <!-- <script type="text/javascript" src="<?php echo ROOT_URL?>/assets/js/eldFrame.js"> -->
     </script>
     <script type="text/javascript" src="<?php echo ROOT_URL?>/assets/js/appFunc.min.js">
     </script>
@@ -72,29 +86,6 @@ require_once ROOT_PATH.'/lib/mysqlDao.php';
         setTimeout('$("#divNewsBanner").fadeIn()', 500);
     });
     </script>
-    <!-- <style> -->
-    <!-- @media (min-width: 480px) {	 -->
-    <!-- .bg-hero3 .bg-borderdiv > div { -->
-    <!-- padding: 5px; -->
-    <!-- } -->
-    <!-- .bg-hero3 .bg-borderdiv > div > div { -->
-    <!-- min-height: 1900px; -->
-    <!-- } -->
-    <!-- } -->
-    <!-- @media (min-width: 767px) {	 -->
-    <!-- .bg-hero3 .bg-borderdiv > div { -->
-    <!-- padding: 6px; -->
-    <!-- } -->
-    <!-- .bg-hero3 .bg-borderdiv > div > div { -->
-    <!-- <!-- min-height: 1200px; -->
-    <!-- } -->
-    <!-- } -->
-    <!-- @media (min-width: 992px) {	 -->
-    <!-- .bg-hero3 .bg-borderdiv > div > div { -->
-    <!-- <!-- min-height: 820px; -->
-    <!-- } -->
-    <!-- } -->
-    <!-- </style> -->
     <style>
     @media (max-width: 480px) {
         .bg-hero3 .bg-borderdiv>div {
@@ -187,17 +178,6 @@ require_once ROOT_PATH.'/lib/mysqlDao.php';
             <br /><br />
         </div>
     </div>
-
-    <!--<div id="divNewsBanner" class="row" style="display:block;">
-		<div class="flexslider">
-		<ul class="slides">
-
-		<li>
-		</li>
-
-		</ul>
-		</div>
-	</div>-->
 
     <div class="row bg-hero1">
         <div class="container bg-borderdiv bg-borderdiv1">
@@ -362,50 +342,14 @@ require_once ROOT_PATH.'/lib/mysqlDao.php';
                             <a href='gazettes/2020/Order_for_Retrieval_of_Registers_for_the_Polling_District_of_PN23.pdf'
                                 target='_blank'>Order for Retrieval of Registers for the Polling District of PN23</a>
                         </h4>
-                        <!-- end GN -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="divFooter" class="footer">
-        <!--start output from Footer().-->
-        <div class="container">
-            <div class="d-flex justify-content-md-between flex-column flex-md-column flex-lg-row">
-                <div class="text-lg-left footerInfo">
-                    <div>BAWASLU KABUPATEN SLEMAN</div><br>
-                    <div
-                        class="d-flex justify-content-center justify-content-lg-start flex-md-row flex-column flex-lg-wrap col-lg-11 pl-lg-0">
-                        <div class="footerPadRight"><a href="https://tech.gov.sg/report_vulnerability.html"
-                                target="_blank">Report Vulnerability</a></div>
-                        <div class="footerPadRight"><a href="privacy.html">Privacy Statement</a></div>
-                        <div class="footerPadRight"><a href="terms.html">Terms of Use</a></div>
-                        <div class="footerPadRight"><a
-                                href="https://app.eservice.eld.gov.sg/voter/eldWebsiteePollForm.aspx" target="_blank">
-                                <nobr>Rate this Service</nobr>
-                            </a></div>
-                        <div class="footerPadRight pt-lg-2"><a href="sitemap.html">Sitemap</a></div>
-                        <div class="footerPadRight pt-lg-2"><a href="links.html">Links</a></div>
-                    </div>
-                </div>
-                <div class="text-lg-right footerInfo footerImg">
-                    <div><img src="images/SQC.svg" alt="Singapore Quality Class Logo"
-                            title="Singapore Quality Class Logo"
-                            style="width: 140px; margin-right: 15px;"><br><span>©2021 Government of Singapore</span><br>
-                        <div style="margin-right: 0px;"> Last updated <span id="spanLastUpdated">12 Apr 2021</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--end output from Footer()-->
-    </div>
-
-    <script type="text/javascript">
-    lastUpdated('12 Apr 2021');
-    </script>
-
+    <?php require_once 'include/footer.php'; ?>
+    
     <!-- Bootstrap core JavaScript
 	================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
