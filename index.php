@@ -66,6 +66,9 @@ require_once ROOT_PATH.'/lib/mysqlDao.php';
     <!-- <link type="text/css" rel="stylesheet" href="css/w3.css" /> -->
     <link type="text/css" rel="stylesheet" href="<?php echo ROOT_URL?>/assets/css/flexslider.min.css" />
     <script type="text/javascript" src="<?php echo ROOT_URL?>/assets/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <!-- ELD Coding -->
     <!-- <script type="text/javascript" src="<?php echo ROOT_URL?>/assets/js/eldFrame.js"> -->
     </script>
@@ -140,30 +143,8 @@ require_once ROOT_PATH.'/lib/mysqlDao.php';
         require_once 'include/header.php';
     ?>
 
-    <div class="flexslider">
-        <ul class="slides">
-            <li>
-                <div class="row bg-jumbotron m-0">
-                    <div class="container">
-                        <div class="container mdToLg">
-                            <p class="homepageText"><br />YOUR VOTE DECIDES<br />THE FUTURE OF SINGAPORE</p>
-                        </div>
-                        <div class="container mdToLg">
-                            <div class="bg-buttondiv col-sm-6 col-md-6 col-lg-6" style="float: right;">
-                                <p class="bg-button"><a href="latestnews.html">LATEST NEWS</a></p>
-                                <p class="bg-button"><a href="online.html">CHECK VOTING STATUS</a></p>
-                                <p class="bg-button"><a href="online.html">RESTORE NAME TO REGISTERS OF ELECTORS</a></p>
-                                <p class="bg-button"><a href="online.html">REGISTER AS OVERSEAS VOTER</a></p>
-                                <p class="bg-button"><a href="candidate_parliamentary_online.html">CANDIDATE
-                                        SERVICES</a></p>
-                                <br /><br />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
+    <?php require_once 'include/banner.php'; ?>
+
 
     <div class="row xsToMd">
         <div class="container">
@@ -349,7 +330,7 @@ require_once ROOT_PATH.'/lib/mysqlDao.php';
     </div>
 
     <?php require_once 'include/footer.php'; ?>
-    
+
     <!-- Bootstrap core JavaScript
 	================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -416,6 +397,23 @@ require_once ROOT_PATH.'/lib/mysqlDao.php';
 
     $(".mobile-search-btn").click(function() {
         $(".mobile-search-bar").slideToggle();
+    });
+
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
     });
     </script>
 </body>
